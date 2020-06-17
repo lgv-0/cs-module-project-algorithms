@@ -5,7 +5,15 @@ Returns: an integer
 def single_number(arr):
     # Your code here
 
-    pass
+    for numb in arr:
+        found = 0
+
+        for zzz in arr:
+            if zzz == numb:
+                found += 1
+
+        if found != 2:
+            return numb
 
 
 if __name__ == '__main__':
